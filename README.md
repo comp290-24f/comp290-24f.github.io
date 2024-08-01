@@ -1,2 +1,2 @@
-# comp211-20f.github.io
+# comp290-24f.github.io
 Website
