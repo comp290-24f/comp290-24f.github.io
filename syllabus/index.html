@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Essential Tools for Computer Science - Home</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.0/css/bulma.min.css">
+    <link rel=stylesheet type="text/css" href="../stylesheet.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <script type="importmap">
+          {
+            "imports": {
+              "@material/web/": "https://esm.run/@material/web/"
+            }
+          }
+        </script>
+    <script type="module">
+        import '@material/web/all.js';
+        import { styles as typescaleStyles } from '@material/web/typography/md-typescale-styles.js';
+
+        document.adoptedStyleSheets.push(typescaleStyles.styleSheet);
+    </script>
+</head>
+
+<body>
+    <div class="flex flex-row items-center w-full h-20 pl-6 pr-6">
+        <md-chip-set>
+            <md-assist-chip class="bg-[var(--md-sys-color-primary-container)]" label="COMP 290"></md-assist-chip>
+            <md-assist-chip class="hidden md:flex" label="Essential Tools for Computer Science"></md-assist-chip>
+        </md-chip-set>
+
+        <div class="ml-auto">
+            <md-text-button href="../">Home</md-text-button>
+            <md-text-button href="../lectures">Lectures</md-text-button>
+            <md-text-button href="../syllabus">Syllabus</md-text-button>
+    </div>
+    </div>
+    <div class="flex flex-col rounded-xl bg-[var(--md-sys-color-surface-container-lowest)] ml-6 mr-6 p-6 min-h-[86vh]">
+        <p class="md-typescale-headline-medium font-semibold mt-2 mb-2">Syllabus</p>
+        <!-- Course Details -->
+        <p class="md-typescale-headline-small font-semibold mt-4">Course Details</p>
+        <p class="mt-2"><strong>Term:</strong> Fall 2024</p>
+        <p class="mt-2"><strong>Instructors</strong>: Ajay Gandecha (agandecha@unc.edu) and Noah Smith (nsmith2@unc.edu)
+        </p>
+        <p class="mt-2"><strong>Section</strong>: In-Person W 2:30p to 3:45p in Fred Brooks Building FB009.</p>
+        <p class="mt-2"><strong>Office Hours</strong>: By appointment (contact the instructors)</p>
+        <!-- Course Description, Target Audience, and Prerequisites -->
+        <p class="md-typescale-headline-small font-semibold mt-4">Course Description, Target Audience, and Prerequisites
+        </p>
+        <p class="mt-2">This course introduces students to essential computer science tools and technologies not taught
+            in other classes. Students will also learn methodologies to help them plan, develop, and present their own
+            software projects. By the end of this course, students will expand their computer science toolbelt, gain
+            experience with tools used extensively in industry, and be well-prepared for taking upper-division computer
+            science classes and begin working on their own extracurricular projects.</p>
+        <p class="mt-2">The target audience for this course are Undergraduate Computer Science majors, or prospective
+            Computer Science majors, who either are currently enrolled in COMP 210, or COMP 211 / 301. Students past
+            COMP and COMP 301 are better served enrolling in <em>COMP 423: Foundations of Software Engineering</em>
+            instead. </p>
+        <p class="mt-2"><strong>Prerequisite(s)</strong>: Previously enrolled, or placed out of, COMP 110; Pre- or
+            corequisite, COMP 210.</p>
+        <!-- Goals -->
+        <p class="md-typescale-headline-small font-semibold mt-4">Goals</p>
+        <p class="mt-2">The goal of this course is to teach students about essential tools for the computer scientist
+            toolkit, including but not limited to:</p>
+        <ul> <!-- NOTE! The bulletpoints appear to be bugged. -->
+            <li class="mt-2">1. Introduce students to essential software engineering tools commonly used in both UNC
+                Computer Science
+                classes and in industry, such as the shell and command-line interface, git, GitHub, containerization
+                with Docker, basics on HTTP servers and APIs, deploying to the web, vim, generative AI tools, and more.
+            </li>
+            <li class="mt-2">2. Teach students one the most vital skill for any computer scientist - learning effective
+                strategies for
+                self-learning through reading documentation and research.</li>
+            <li class="mt-2">3. Teach students how to create software side-projects, research and learn new technologies
+                needed to
+                complete side projects, give students the opportunity to experiment with the programming language of
+                their choice, and present their projects in a visually appealing and informative way on GitHub.</li>
+            <li class="mt-2">4. Expose students to the undergraduate UNC Computer Science community, showcase student
+                organizations, and
+                survey some higher-level elective courses.</li>
+        </ul>
+        <!-- Course Modality and Attendance Policy -->
+        <p class="md-typescale-headline-small font-semibold mt-4">Course Modality and Attendance Policy</p>
+        <p class="mt-2">This course will meet <strong>in-person</strong> every Wednesday from 2:30pm-3:45pm in FB009.
+            Attendance is
+            <strong>required</strong> and will make up a decent part of your final grade.
+        </p>
+        <p class="mt-2">During lecture, you will be able to critically engage in the material, ask questions, talk to
+            your peers, and
+            make friends in the UNC Computer Science community. This course is designed to be interactive, and students’
+            participation and interaction with the course and their classmates is the <em>most valuable asset</em> of
+            this
+            course! We only meet once a week, a total of 15 meetings in the semester, so we plan on making each meeting
+            count. If you do not plan on attending class regularly, we recommend you opt for a different course.
+        </p>
+        <p class="mt-2">To account for unexpected situations, such as illness or otherwise, each student is permitted to
+            be absent
+            for <em>one (1) lecture meeting without any penalty, prior approval, or instructor notification</em>,
+            regardless of
+            absence type (university approved or otherwise). After one missed lecture, absences will count against your
+            in-class activities and participation grade unless they are university or instructor approved.
+        </p>
+        <!-- Grading Criteria -->
+        <p class="md-typescale-headline-small font-semibold mt-4">Grading Criteria</p>
+        <div class="pl-5">
+            <p class="md-typescale-title-large font-semibold mt-4">Grading Scale and Grade Breakdown</p>
+            <p class="mt-2">This course will follow the following grading scale:</p>
+            <table class="border-2 border-collapse w-max mt-4 text-center hidden md:flex">
+                <tr>
+                    <th class="border-2 border-collapse pl-2 pr-2 pt-1 pb-1">A</th>
+                    <th class="border-2 border-collapse pl-2 pr-2 pt-1 pb-1">A-</th>
+                    <th class="border-2 border-collapse pl-2 pr-2 pt-1 pb-1">B+</th>
+                    <th class="border-2 border-collapse pl-2 pr-2 pt-1 pb-1">B</th>
+                    <th class="border-2 border-collapse pl-2 pr-2 pt-1 pb-1">B-</th>
+                    <th class="border-2 border-collapse pl-2 pr-2 pt-1 pb-1">C+</th>
+                    <th class="border-2 border-collapse pl-2 pr-2 pt-1 pb-1">C</th>
+                    <th class="border-2 border-collapse pl-2 pr-2 pt-1 pb-1">C-</th>
+                    <th class="border-2 border-collapse pl-2 pr-2 pt-1 pb-1">D</th>
+                    <th class="border-2 border-collapse pl-2 pr-2 pt-1 pb-1">F</th>
+                </tr>
+                <tr>
+                    <td class="border-2 border-collapse pl-2 pr-2 pt-1 pb-1">93-100</td>
+                    <td class="border-2 border-collapse pl-2 pr-2 pt-1 pb-1">90-92</td>
+                    <td class="border-2 border-collapse pl-2 pr-2 pt-1 pb-1">87-89</td>
+                    <td class="border-2 border-collapse pl-2 pr-2 pt-1 pb-1">83-86</td>
+                    <td class="border-2 border-collapse pl-2 pr-2 pt-1 pb-1">80-82-</td>
+                    <td class="border-2 border-collapse pl-2 pr-2 pt-1 pb-1">77-79</td>
+                    <td class="border-2 border-collapse pl-2 pr-2 pt-1 pb-1">73-76</td>
+                    <td class="border-2 border-collapse pl-2 pr-2 pt-1 pb-1">70-72</td>
+                    <td class="border-2 border-collapse pl-2 pr-2 pt-1 pb-1">60-69</td>
+                    <td class="border-2 border-collapse pl-2 pr-2 pt-1 pb-1">&lt;60</td>
+                </tr>
+            </table>
+            <!-- Mobile only (vertical) -->
+            <!-- sorry... -->
+            <table class="border-2 border-collapse w-max mt-4 text-center md:hidden">
+                <tr>
+                    <th class="border-2 border-collapse pl-2 pr-2 pt-1 pb-1">A</th>
+                    <td class="border-2 border-collapse pl-2 pr-2 pt-1 pb-1">93-100</td>
+                </tr>
+                <tr>
+                    <th class="border-2 border-collapse pl-2 pr-2 pt-1 pb-1">A-</th>
+                    <td class="border-2 border-collapse pl-2 pr-2 pt-1 pb-1">90-92</td>
+                </tr>
+                <tr>
+                    <th class="border-2 border-collapse pl-2 pr-2 pt-1 pb-1">B+</th>
+                    <td class="border-2 border-collapse pl-2 pr-2 pt-1 pb-1">87-89</td>
+                </tr>
+                <tr>
+                    <th class="border-2 border-collapse pl-2 pr-2 pt-1 pb-1">B</th>
+                    <td class="border-2 border-collapse pl-2 pr-2 pt-1 pb-1">83-86</td>
+                </tr>
+                <tr>
+                    <th class="border-2 border-collapse pl-2 pr-2 pt-1 pb-1">B-</th>
+                    <td class="border-2 border-collapse pl-2 pr-2 pt-1 pb-1">80-82-</td>
+                </tr>
+                <tr>
+                    <th class="border-2 border-collapse pl-2 pr-2 pt-1 pb-1">C+</th>
+                    <td class="border-2 border-collapse pl-2 pr-2 pt-1 pb-1">77-79</td>
+                </tr>
+                <tr>
+                    <th class="border-2 border-collapse pl-2 pr-2 pt-1 pb-1">C</th>
+                    <td class="border-2 border-collapse pl-2 pr-2 pt-1 pb-1">73-76</td>
+                </tr>
+                <tr>
+                    <th class="border-2 border-collapse pl-2 pr-2 pt-1 pb-1">C-</th>
+                    <td class="border-2 border-collapse pl-2 pr-2 pt-1 pb-1">70-72</td>
+                </tr>
+                <tr>
+                    <th class="border-2 border-collapse pl-2 pr-2 pt-1 pb-1">D</th>
+                    <td class="border-2 border-collapse pl-2 pr-2 pt-1 pb-1">60-69</td>
+                </tr>
+                <tr>
+                    <th class="border-2 border-collapse pl-2 pr-2 pt-1 pb-1">F</th>
+                    <td class="border-2 border-collapse pl-2 pr-2 pt-1 pb-1">&lt;60</td>
+                </tr>
+            </table>
+            <p class="mt-2">Your course grade will consist of the following breakdown:</p>
+            <table class="border-2 border-collapse w-max mt-4 text-center">
+                <tr>
+                    <th class="border-2 border-collapse pl-2 pr-2 pt-1 pb-1">Component</th>
+                    <th class="border-2 border-collapse pl-2 pr-2 pt-1 pb-1">%</th>
+                </tr>
+                <tr>
+                    <td class="border-2 border-collapse pl-2 pr-2 pt-1 pb-1">Participation</td>
+                    <td class="border-2 border-collapse pl-2 pr-2 pt-1 pb-1">30%</td>
+                </tr>
+                <tr>
+                    <td class="border-2 border-collapse pl-2 pr-2 pt-1 pb-1">Assignments</td>
+                    <td class="border-2 border-collapse pl-2 pr-2 pt-1 pb-1">30%</td>
+                </tr>
+                <tr>
+                    <td class="border-2 border-collapse pl-2 pr-2 pt-1 pb-1">Final Project</td>
+                    <td class="border-2 border-collapse pl-2 pr-2 pt-1 pb-1">40%</td>
+                </tr>
+            </table>
+            <p class="md-typescale-title-large font-semibold mt-4">Participation (30%)</p>
+            <p class="mt-2">The <strong>participation</strong> component of your grade is broken down into two parts:
+            </p>
+            <ul>
+                <li class="mt-2"><strong>Attendance to Lecture (20%)</strong>: As emphasized in the modality portion of
+                    the
+                    syllabus,
+                    this course meets
+                    in-person once a week. Earn these points simply by showing up each week.
+                </li>
+                <li class="mt-2"><strong>Participation in Lecture (10%)</strong>: The remaining portion of the
+                    participation
+                    grade is
+                    earned based on the quality of your participation in lecture and your overall contributions to the
+                    class
+                    and your classmates! This will be determined by the instructors at the end of the semester and there
+                    is
+                    no strict rubric, but here are some examples of actions that may impact your participation grade:
+                    <ul>
+                        <li class="mt-2"><em><u>Good</u>: Raise your hand in class, good-faith participation in class
+                                discussions, remain
+                                engaged in lecture, pay attention, show self-initiative.</em></li>
+                        <li class="mt-2"><em><u>Bad</u>: Do not participate in class, stay quiet in group discussions,
+                                not
+                                engaging in
+                                course content during class (surfing the web, texting, etc), do not engage in class
+                                materials, readings, or supplemental activities.</em></li>
+                    </ul>
+                </li>
+            </ul>
+            <p class="md-typescale-title-large font-semibold mt-4">Assignments (30%)</p>
+            <p class="mt-2">The <strong>assignment</strong> component of your grade will be the average scores of the
+                assignments that are assigned in-class. Assignments will be clearly marked on the course website, and
+                grading criteria for each will be provided. You can keep track of your assignment grades through
+                <em>GradeScope</em>, and these grades will be uploaded to Canvas at the end of the semester.
+            </p>
+            <p class="md-typescale-title-large font-semibold mt-4">Final Project (40%)</p>
+            <p class="mt-2">This course will have a final project, which will consist of developing a plan to create an
+                extracurricular software side project of your choice. By the end of the project, you will learn about
+                how to
+                develop software project ideas, research new technologies, read documentation, and develop a timeline to
+                make meaningful progress on such ideas. In addition, you will have a real, tangible plan for creating a
+                project that you can follow in your free time!</p>
+            <p class="mt-2">The project will be broken down into the following parts (subject to change):</p>
+            <ul>
+                <li class="mt-2">Proposal (30%)</li>
+                <li class="mt-2">Getting Started Tutorial (30%)</li>
+                <li class="mt-2">Action Plan (25%)</li>
+                <li class="mt-2">Presentation (15%)</li>
+            </ul>
+            <p class="md-typescale-title-large font-semibold mt-4">Final Presentations</p>
+            <p class="mt-2">In lieu of a final exam, we will use our scheduled final exam time for final project
+                presentations. Presentations will occur <strong>IN-PERSON</strong> in concordance with the UNC Final
+                Exam
+                schedule on <strong>Friday, December 6th at 8:00AM in FB009</strong>. This will contribute to the
+                <em>Presentation</em> component of the Final Project grade.
+            </p>
+            <p class="md-typescale-title-large font-semibold mt-4">Late Submission Policy</p>
+            <p class="mt-2">All assignments will have a <em>5:00am</em> deadline on the morning after the due date.
+                Effectively this means that an assignment due on a Sunday, for example, is really due at 5 AM the
+                following
+                Monday.
+            </p>
+            <p>Assignments with 5:00am deadlines will have <strong>late periods open for 72 hours</strong>. If an
+                assignment
+                is submitted
+                late, a <strong>15% penalty</strong> will be applied to the submission. Submissions cannot be made
+                outside
+                of the late period
+                window. If you are unable to submit an assignment due to an emergency or extenuating circumstance,
+                please
+                contact the instructors before the due date.
+            </p>
+        </div>
+        <!-- Honor Code, AI Policy, and Collaboration Policy -->
+        <p class="md-typescale-headline-small font-semibold mt-4">Honor Code and Collaboration Policy</p>
+        <p class="mt-2">All students are expected to follow the guidelines of the UNC Honor Code. Students may use
+            artificial intelligence tools such as ChatGPT to reinforce or explain concepts, but never to complete
+            assignments, generate code to submit on assignments, or generate text to submit for assignments -
+            <strong>especially</strong>
+            on the final project submission. Doing so is an Honor Court violation and will result in a 0 on that portion
+            of an assignment. For programming assignment submissions, you must understand and be able to explain any
+            code snippet, derivation, or generated code you make use of in your work if asked by an instructor.
+        </p>
+        <p>Collaboration may be permitted on some assignments: if so, it will be clearly listed on the assignment
+            itself. When collaborating with others, make sure to write the full name of the peers you are collaborating
+            with.</p>
+        <!-- Additional Information -->
+        <p class="md-typescale-headline-small font-semibold mt-4">Additional Information</p>
+        <div class="pl-5">
+            <p class="md-typescale-title-large font-semibold mt-4">Diversity Statement</p>
+            <p class="mt-2">The instructors value the perspectives of individuals from all backgrounds reflecting the
+                diversity of our students. We broadly define diversity to include race, gender identity, national
+                origin, ethnicity, religion, social class, age, sexual orientation, political background, and physical
+                and learning ability. We strive to make this classroom an inclusive space for all students. Please let
+                us know if there is anything we can do to improve; we appreciate suggestions.</p>
+            <p class="md-typescale-title-large font-semibold mt-4">Title IX Resources</p>
+            <p class="mt-2">Any student who is impacted by discrimination, harassment, interpersonal (relationship)
+                violence, sexual violence, sexual exploitation, or stalking is encouraged to seek resources on campus or
+                in the community. Please contact the Director of Title IX Compliance (Adrienne Allison –
+                Adrienne.allison@unc.edu), Report and Response Coordinators in the Equal Opportunity and Compliance
+                Office (reportandresponse@unc.edu), Counseling and Psychological Services (confidential), or the Gender
+                Violence Services Coordinators (gvsc@unc.edu; confidential) to discuss your specific needs. Additional
+                resources are available at safe.unc.edu.</p>
+            <p class="md-typescale-title-large font-semibold mt-4">Counseling and Psychological Services</p>
+            <p class="mt-2">CAPS is strongly committed to addressing the mental health needs of a diverse student body
+                through timely access to consultation and connection to clinically appropriate services, whether for
+                short or long-term needs. Go to their website: https://caps.unc.edu/ or visit their facilities on the
+                third floor of the Campus Health Services building for a walk-in evaluation to learn more. (source:
+                Student Safety and Wellness Proposal for EPC, Sep 2018)</p>
+        </div>
+    </div>
+
+    <div class="flex flex-col h-[5vh] justify-center">
+        <p class="text-center md-typescale-label-medium">© 2024 <a class="underline"
+                href="https://github.com/ajaygandecha" target="_blank">Ajay Gandecha</a> and <a class="underline"
+                href="https://github.com/noahsmiths" target="_blank">Noah Smith</a> - Made with 💚 in Chapel Hill</p>
+    </div>
+</body>
+
+</html>

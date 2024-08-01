@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html>
+
+<head>
+        <title>Essential Tools for Computer Science - Home</title>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.0/css/bulma.min.css">
+        <link rel=stylesheet type="text/css" href="../stylesheet.css">
+        <script src="https://cdn.tailwindcss.com"></script>
+
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+        <script type="importmap">
+          {
+            "imports": {
+              "@material/web/": "https://esm.run/@material/web/"
+            }
+          }
+        </script>
+        <script type="module">
+                import '@material/web/all.js';
+                import { styles as typescaleStyles } from '@material/web/typography/md-typescale-styles.js';
+
+                document.adoptedStyleSheets.push(typescaleStyles.styleSheet);
+        </script>
+</head>
+
+<body>
+        <div class="flex flex-row items-center w-full h-20 pl-6 pr-6">
+                <md-chip-set>
+                        <md-assist-chip class="bg-[var(--md-sys-color-primary-container)]"
+                                label="COMP 290"></md-assist-chip>
+                        <md-assist-chip class="hidden md:visible" label="Essential Tools for Computer Science"></md-assist-chip>
+                </md-chip-set>
+
+                <div class="ml-auto">
+                        <md-text-button href="../">Home</md-text-button>
+                        <md-text-button href="../lectures">Lectures</md-text-button>
+                        <md-text-button href="../syllabus">Syllabus</md-text-button>
+                </div>
+        </div>
+        <div class="flex flex-col rounded-xl bg-[var(--md-sys-color-surface-container-lowest)] ml-6 mr-6 min-h-[86vh]">
+                <div class="flex flex-col w-full p-6">
+                        <p class="md-typescale-headline-medium font-semibold mt-2 mb-2">Lectures</p>
+                </div>
+                <div class="flex flex-col bg-[#fafafa] w-full">
+                        <p class="md-typescale-headline-small font-medium mt-5 mb-2 text-center">Week 1: Basics of the
+                                Shell</p>
+                        <div class="flex flex-col md:flex-row mt-4 mb-6">
+                                <div class="flex flex-col md:w-1/2 items-center justify-center">
+                                        <!-- Note: Wrapper is used here for the iframe to be responsive. -->
+                                        <div class="w-2/3 mt-2 mb-4">
+                                                <div class="relative pb-[56.25%] pt-6 h-0 w-full">
+                                                        <iframe
+                                                        class=" absolute top-0 left-0 w-full h-full "
+                                                        src="https://www.youtube.com/embed/d6O6kyqjcYo?si=d-yD16kwdcJl0m1s"
+                                                        title="YouTube video player" frameborder="0"
+                                                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                                        referrerpolicy="strict-origin-when-cross-origin"
+                                                        allowfullscreen></iframe>
+                                                </div>
+                                        </div>
+                                        
+                                </div>
+                                <div class="flex flex-col md:w-1/2 pl-4 pr-6 justify-center">
+                                        <div>
+                                                <p class="md-typescale-title-medium font-semibold mt-2 mb-2">Synopsis</p>
+                                        <p>In this lecture, students are introduced to the course, their peers, and
+                                                course
+                                                expectations. We introduce students to the shell and the command-line
+                                                interface. Students learn about running shell programs, environment
+                                                variables, and filepaths.
+                                        </p>
+                                        <p class="md-typescale-title-medium font-semibold mt-2 mb-2">Lecture Materials
+                                        </p>
+                                        <ol>
+                                                <ul>Lecture Slides</ul>
+                                        </ol>
+                                        <p class="md-typescale-title-medium font-semibold mt-2 mb-2">Assignments</p>
+                                        <ol>
+                                                <ul><span class="font-medium">Exercise</span>: Scavenger Hunt
+                                                        <strong>(Due: 8/27)</strong>
+                                                </ul>
+                                                <ul><span class="font-medium">Reading</span>: Learn a CLI <em>(K.
+                                                                Jordan)</em></ul>
+                                                <ul><span class="font-medium">Extracurricular</span>: Attend the CS Club
+                                                        Showcase</em></ul>
+                                        </ol>
+
+                                        <p class="md-typescale-title-medium font-semibold mt-2 mb-2">Extra Resources</p>
+                                        <ol>
+                                                <ul>Supplemental material here.</ul>
+                                        </ol>
+                                        </div>
+                                </div>
+                        </div>
+                </div>
+        </div>
+</body>
