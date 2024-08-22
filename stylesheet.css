@@ -53,3 +53,7 @@
 html, body {
     background-color: var(--md-sys-color-surface);
 }
+
+a {
+    text-decoration: underline;
+}
